@@ -113,11 +113,57 @@ J3: (0+0.25)/0.25 = 1
 
 
 <img id="16" src='./image/hw2/2-16.png'>
+(1)
 
+`FCFS`
+
+<img src='./image/hw2/FCFS.png' width=300px>
+
+`SJF`
+
+<img src='./image/hw2/SJF.png' width=300px>
+
+`Priority`
+
+<img src='./image/hw2/Priority.png' width=300px>
+
+`RR`
+
+<img src='./image/hw2/RR.png' width=500px>
+
+(2)
+
+各调度算法下`周转时间（turnaround time）`和`平均周转时间`如下表所示:
+
+|   | FCFS | RR | SJF | Priority |
+| - | ---- | -- | --- | ---------|
+| P1 | 10 | 19 | 19 | 16 |
+| P2 | 11 | 2  | 1  | 1  |
+| P3 | 14 | 4  | 2  | 19 |
+| P4 | 14 | 4  | 2  | 19 |
+| P5 | 19 | 14 | 9  | 6  |
+| AVG|13.6| 8.6| 6.6|10.2|
+
+(3)
+
+各调度算法下`等待时间（turnaround time）`和`平均等待时间`如下表所示:
+|   | FCFS | RR | SJF | Priority |
+| - | ---- | -- | --- | ---------|
+| P1 | 0  |  9 | 9  | 6  |
+| P2 | 10 | 1  | 0  | 0  |
+| P3 | 11 | 5  | 2  | 16 |
+| P4 | 13 | 3  | 1  | 18 |
+| P5 | 14 | 9  | 4  | 1  |
+| AVG| 9.6| 5.4| 3.2| 8.2|
+
+(4)
+
+`最短作业优先算法（SJF）`可以得到最小的等待时间
 
 <br>
 
 ![2-17](./image/hw2/2-17.png)
+
 
 
 <br>

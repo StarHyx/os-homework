@@ -97,7 +97,7 @@ J3: (0+0.25)/0.25 = 1
 
 <br>
 
-![2-15](./image/hw2/2-15.png)
+<img id="15" src='./image/hw2/2-15.png'>
 场景：进程A下CPU，进程B上CPU
 
 1. 保存进程A的上下文环境（程序计数器，程序状态字，其他寄存器…）
@@ -111,7 +111,8 @@ J3: (0+0.25)/0.25 = 1
 
 <br>
 
-![2-16](./image/hw2/2-16.png)
+
+<img id="16" src='./image/hw2/2-16.png'>
 
 
 <br>
@@ -122,7 +123,9 @@ J3: (0+0.25)/0.25 = 1
 <br>
 
 ![ex1](./image/hw2/ex1.png)
-**The operating system must save the state of the currently running process and restore the state of the process scheduled to be run next.**(与2-15相同)
+**The operating system must save the state of the currently running process and restore the state of the process scheduled to be run next.**
+
+[与15题相同](#15)
 
 Saving the state of a process typically includes thevalues of all the CPU registers in addition to memory allocation.
 
@@ -162,17 +165,23 @@ The threads of a multithreaded process share `heap memory` and `global variables
 <br>
 
 ![ex6](./image/hw2/ex6.png)
-
+[与16题相同](#16)
 
 <br>
 
 ![ex7](./image/hw2/ex7.png)
-
+`a, d`
 
 <br>
 
 ![ex8](./image/hw2/ex8.png)
+`时间片为1ms：`无论调度哪个进程，调度程序都会为每个上下文切换产生0.1ms的上下文切换成本。
 
+**CPU利用率为1 / 1.1 * 100 = 91％**
+
+`时间片为10ms：`I/O绑定任务在耗尽仅1毫秒的时间片后才会产生上下文切换。 循环所有进程所需的时间是10 * 1.1 + 10.1（因为每个I/O绑定任务执行1ms然后引发上下文切换任务，而CPU绑定任务执行10ms之后才会发生上下文切换）。
+
+**CPU利用率为20 / 21.1 * 100 = 94％。**
 
 <br>
 

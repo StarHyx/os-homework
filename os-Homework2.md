@@ -2,7 +2,7 @@
 
 **3150103823 韩熠星**
 
-![2-1](./image/hw2/2-1.png)
+<img src='./image/hw2/2-1.png' width=400px>
 
 `A`
 
@@ -12,72 +12,85 @@
 
 <br>
 
-![2-2](./image/hw2/2-2.png)
+<img src='./image/hw2/2-2.png' width=400px>
+
 `C`：V操作作使信号量+1，加完之后非正说明等待队列里有进程在等待，调用wakeup唤醒一个等待进程
 
 >D：时间片用完会从【执行状态】回到【就绪状态】，而不是进到【阻塞状态】
 
 <br>
 
-![2-3](./image/hw2/2-3.png)
-`B`:进程具有并发性，也可以有多个进程运行
+<img src='./image/hw2/2-3.png' width=400px>
+
+`B`：进程具有并发性，也可以有多个进程运行
 
 <br>
 
-![2-4](./image/hw2/2-4.png)
+<img src='./image/hw2/2-4.png' width=400px>
+
 `A`：应为进程
 
 <br>
 
-![2-5](./image/hw2/2-5.png)
+<img src='./image/hw2/2-5.png' width=400px>
+
 `A`
 
 <br>
 
-![2-6](./image/hw2/2-6.png)
+<img src='./image/hw2/2-6.png' width=400px>
+
 `A`
 
 <br>
 
-![2-7](./image/hw2/2-7.png)
+<img src='./image/hw2/2-7.png' width=400px>
+
 `C`
 
 <br>
 
-![2-8](./image/hw2/2-8.png)
+<img src='./image/hw2/2-8.png' width=400px>
+
 `C`
-J1: (1.5+2)/2 = 1.75
-J2: (1+1)/1 = 2
-J3: (0+0.25)/0.25 = 1
+
++ J1: (1.5+2)/2 = 1.75
++ J2: (1+1)/1 = 2
++ J3: (0+0.25)/0.25 = 1
 
 <br>
 
-![2-9](./image/hw2/2-9.png)
+<img src='./image/hw2/2-9.png' width=400px>
+
 `C`：进入就绪队列，不是等待队列
 
 <br>
 
-![2-10](./image/hw2/2-10.png)
+<img src='./image/hw2/2-10.png' width=400px>
+
 `C`
 
 <br>
 
-![2-11](./image/hw2/2-11.png)
+<img src='./image/hw2/2-11.png' width=400px>
+
 `D`： 时间片轮转法和先来先服务算法都是用户感觉公平的方法，并未考虑进程等待时间和执行时间，而短进程优先考虑的是进程执行时间。
 
 <br>
 
-![2-12](./image/hw2/2-12.png)
+<img src='./image/hw2/2-12.png' width=300px>
+
 `C`：时间片轮转多用在分时系统中
 
 <br>
 
-![2-13](./image/hw2/2-13.png)
+<img src='./image/hw2/2-13.png' width=300px>
+
 `C`
 
 <br>
 
-![2-14](./image/hw2/2-14.png)
+<img src='./image/hw2/2-14.png' width=400px>
 
 （1）当运行进程因 I/O 而阻塞。这时候进程会从运行状态转到等待状态。发生变迁3。当高就绪队列为空时会发生变迁4。当等待时间已经发生时，会发生变迁6。
 
@@ -97,7 +110,8 @@ J3: (0+0.25)/0.25 = 1
 
 <br>
 
-<img id="15" src='./image/hw2/2-15.png'>
+<img id="15" src='./image/hw2/2-15.png' width=300px>
+
 场景：进程A下CPU，进程B上CPU
 
 1. 保存进程A的上下文环境（程序计数器，程序状态字，其他寄存器…）
@@ -112,7 +126,8 @@ J3: (0+0.25)/0.25 = 1
 <br>
 
 
-<img id="16" src='./image/hw2/2-16.png'>
+<img id="16" src='./image/hw2/2-16.png' width=500px>
+
 (1)
 
 `FCFS`
@@ -162,13 +177,20 @@ J3: (0+0.25)/0.25 = 1
 
 <br>
 
-![2-17](./image/hw2/2-17.png)
+<img src='./image/hw2/2-17.png' width=450px>
 
+（1）SJF中用时最短的任务具有最高优先级
 
+（2）多级反馈队列调度算法的最低级别就是FCFS
+
+（3）FCFS为先来的进程提供最高的优先级
+
+（4）没有这样的关系
 
 <br>
 
-![ex1](./image/hw2/ex1.png)
+<img src='./image/hw2/ex1.png' width=400px>
+
 **The operating system must save the state of the currently running process and restore the state of the process scheduled to be run next.**
 
 [与15题相同](#15)
@@ -179,7 +201,7 @@ Context switches must also perform many architecture-specific operations,includi
 
 <br>
 
-![ex2](./image/hw2/ex2.png)
+<img src='./image/hw2/ex2.png' width=400px>
 
 1. Any kind of sequential program is not a good candidate to be threaded. `e.g. Calculating personal income tax`
 
@@ -187,12 +209,14 @@ Context switches must also perform many architecture-specific operations,includi
 
 <br>
 
-![ex3](./image/hw2/ex3.png)
+<img src='./image/hw2/ex3.png' width=400px>
+
 在程序可能遭受频繁页缺失或必须等待其他系统事件的情况下，即使在单处理器系统上，多线程解决方案也会表现更好。
 
 <br>
 
-![ex4](./image/hw2/ex4.png)
+<img src='./image/hw2/ex4.png' width=400px>
+
 `b, c`
 
 The threads of a multithreaded process share `heap memory` and `global variables`. Each thread has its separate set of `register values` and a `separate stack`.
@@ -200,7 +224,8 @@ The threads of a multithreaded process share `heap memory` and `global variables
 
 <br>
 
-![ex5](./image/hw2/ex5.png)
+<img src='./image/hw2/ex5.png' width=400px>
+
 `a:`当内核线程的数量小于处理器的数量时，由于调度程序仅将内核线程映射到处理器而不将用户级线程映射到处理器，因此一些处理器将保持空闲
 
 `b:`当内核线程的数量等于处理器的数量，则可能同时使用所有处理器。 但是，当一个内核线程内核中的块由于页缺失或在调用系统调用时，相应的处理器将保持空闲状态。
@@ -210,17 +235,20 @@ The threads of a multithreaded process share `heap memory` and `global variables
 
 <br>
 
-![ex6](./image/hw2/ex6.png)
+<img src='./image/hw2/ex6.png' width=500px>
+
 [与16题相同](#16)
 
 <br>
 
-![ex7](./image/hw2/ex7.png)
+<img src='./image/hw2/ex7.png' width=400px>
+
 `a, d`
 
 <br>
 
-![ex8](./image/hw2/ex8.png)
+<img src='./image/hw2/ex8.png' width=400px>
+
 `时间片为1ms：`无论调度哪个进程，调度程序都会为每个上下文切换产生0.1ms的上下文切换成本。
 
 **CPU利用率为1 / 1.1 * 100 = 91％**
@@ -231,7 +259,8 @@ The threads of a multithreaded process share `heap memory` and `global variables
 
 <br>
 
-![ex9](./image/hw2/ex9.png)
+<img src='./image/hw2/ex9.png' width=400px>
+
 `a. FCFS:` discriminates against short jobs since any short jobs arriving after long jobs will have a longer waiting time.
 
 `b. RR:` treats all jobs equally (giving them equal bursts of CPU time) , so short jobs will be able to leave the system faster since they will ﬁnish ﬁrst.

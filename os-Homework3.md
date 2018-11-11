@@ -2,57 +2,66 @@
 
 **3150103823 韩熠星**
 
-![3-1](./image/hw3/3-1.png)
+<img src='./image/hw3/3-1.png' width=400px>
+
 `B`：初始值3，当前1，也就是有两个进程正在占用资源，还可以进入一个，没有进程等待。
 
 <br>
+<img src='./image/hw3/3-2.png' width=400px>
 
-![3-2](./image/hw3/3-2.png)
 `C`
 
 <br>
 
-![3-3](./image/hw3/3-3.png)
+<img src='./image/hw3/3-3.png' width=400px>
+
 `C`：ｖ操作的作用是归还资源，将所申请的资源数加一，然后判断资源数是否小于等于０，若小于等于０说明有进程阻塞在当前资源上，唤醒一个当前资源链表中的进程。
 
 <br>
 
-![3-4](./image/hw3/3-4.png)
+<img src='./image/hw3/3-4.png' width=400px>
+
 `B`
 
 <br>
 
-![3-5](./image/hw3/3-5.png)
+<img src='./image/hw3/3-5.png' width=450px>
+
 `A`
 
 <br>
 
-![3-6](./image/hw3/3-6.png)
+<img src='./image/hw3/3-6.png' width=400px>
+
 `D`
 
 <br>
 
-![3-7](./image/hw3/3-7.png)
+<img src='./image/hw3/3-7.png' width=400px>
+
 `C`
 
 <br>
 
-![3-8](./image/hw3/3-8.png)
+<img src='./image/hw3/3-8.png' width=400px>
+
 `B`
 
 <br>
 
-![3-9](./image/hw3/3-9.png)
+<img src='./image/hw3/3-9.png' width=400px>
+
 `A`
 
 <br>
 
-![3-10](./image/hw3/3-10.png)
+<img src='./image/hw3/3-10.png' width=400px>
+
 `D`
 
 <br>
 
-![3-11](./image/hw3/3-11.png)
+<img src='./image/hw3/3-11.png' width=400px>
 
 `信号量mutex`：是保证各生产者进程和消费者进程对缓冲池的互斥访问。
 
@@ -65,7 +74,8 @@
 
 <br>
 
-![3-12](./image/hw3/3-12.png)
+<img src='./image/hw3/3-12.png' width=400px>
+
 可设置8个信号量 a、b、c、d、e、f、g、h，它们的初值均为0，而相应的进程可描述为（其中“…”表示进程原来的代码）：
 
 ```c
@@ -82,7 +92,7 @@ cobegin{
 
 <br>
 
-![3-13](./image/hw3/3-13.png)
+<img src='./image/hw3/3-13.png' width=500px>
 
 `1. 互斥`
 P1,P2不会同时进入临界区，满足互斥条件。
@@ -97,7 +107,7 @@ P1,P2不会同时进入临界区，满足互斥条件。
 
 <br>
 
-![3-14](./image/hw3/3-14.png)
+<img src='./image/hw3/3-14.png' width=400px>
 
 ```c
 semaphore mutex=1;              // 用于互斥访问缓冲区

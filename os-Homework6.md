@@ -79,6 +79,7 @@
 
 <img src='./image/hw6/6-12.png' width=350px>
 
+LRU的基本思想是：
 <br>
 
 

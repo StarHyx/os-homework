@@ -80,10 +80,15 @@
 <img src='./image/hw6/6-12.png' width=350px>
 
 LRU的基本思想是：
+
+其特点为：
+
+流程图如下：
 <br>
 
 
 <img src='./image/hw6/6-13.png' width=500px>
+
 
 <br>
 

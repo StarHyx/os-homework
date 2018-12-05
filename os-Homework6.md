@@ -57,6 +57,11 @@
 
 <img src='./image/hw6/6-8.png' width=400px>
 
+（1）
+
+（2）
+
+
 <br>
 
 
